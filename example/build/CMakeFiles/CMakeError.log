@@ -1,0 +1,500 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3ba79/fast && /usr/bin/make -f CMakeFiles/cmTC_3ba79.dir/build.make CMakeFiles/cmTC_3ba79.dir/build
+make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3ba79.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3ba79.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3ba79
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ba79.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_3ba79.dir/src.c.o  -o cmTC_3ba79 
+/usr/bin/ld: CMakeFiles/cmTC_3ba79.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3ba79.dir/build.make:87：cmTC_3ba79] 错误 1
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_3ba79/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef196/fast && /usr/bin/make -f CMakeFiles/cmTC_ef196.dir/build.make CMakeFiles/cmTC_ef196.dir/build
+make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ef196.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ef196.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ef196
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef196.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_ef196.dir/src.c.o  -o cmTC_ef196 
+/usr/bin/ld: CMakeFiles/cmTC_ef196.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ef196.dir/build.make:87：cmTC_ef196] 错误 1
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_ef196/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c3ca0/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_c3ca0.dir/build.make CMakeFiles/cmTC_c3ca0.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c3ca0.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c3ca0.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c3ca0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3ca0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_c3ca0.dir/src.c.o  -o cmTC_c3ca0 
+/usr/bin/ld: CMakeFiles/cmTC_c3ca0.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_c3ca0.dir/build.make:87：cmTC_c3ca0] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_c3ca0/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_34181/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_34181.dir/build.make CMakeFiles/cmTC_34181.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_34181.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_34181.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_34181
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34181.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_34181.dir/src.c.o  -o cmTC_34181 
+/usr/bin/ld: CMakeFiles/cmTC_34181.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_34181.dir/build.make:87：cmTC_34181] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_34181/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_98516/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_98516.dir/build.make CMakeFiles/cmTC_98516.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_98516.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_98516.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_98516
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98516.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_98516.dir/src.c.o  -o cmTC_98516 
+/usr/bin/ld: CMakeFiles/cmTC_98516.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_98516.dir/build.make:87：cmTC_98516] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_98516/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_252bf/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_252bf.dir/build.make CMakeFiles/cmTC_252bf.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_252bf.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_252bf.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_252bf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_252bf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_252bf.dir/src.c.o  -o cmTC_252bf 
+/usr/bin/ld: CMakeFiles/cmTC_252bf.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_252bf.dir/build.make:87：cmTC_252bf] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_252bf/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9fa02/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_9fa02.dir/build.make CMakeFiles/cmTC_9fa02.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9fa02.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9fa02.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9fa02
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fa02.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_9fa02.dir/src.c.o  -o cmTC_9fa02 
+/usr/bin/ld: CMakeFiles/cmTC_9fa02.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_9fa02.dir/build.make:87：cmTC_9fa02] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_9fa02/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0a41/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_b0a41.dir/build.make CMakeFiles/cmTC_b0a41.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b0a41.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b0a41.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b0a41
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0a41.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_b0a41.dir/src.c.o  -o cmTC_b0a41 
+/usr/bin/ld: CMakeFiles/cmTC_b0a41.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_b0a41.dir/build.make:87：cmTC_b0a41] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_b0a41/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6fa9c/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_6fa9c.dir/build.make CMakeFiles/cmTC_6fa9c.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6fa9c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6fa9c.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6fa9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fa9c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_6fa9c.dir/src.c.o  -o cmTC_6fa9c 
+/usr/bin/ld: CMakeFiles/cmTC_6fa9c.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_6fa9c.dir/build.make:87：cmTC_6fa9c] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_6fa9c/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e9a8e/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_e9a8e.dir/build.make CMakeFiles/cmTC_e9a8e.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e9a8e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e9a8e.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e9a8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a8e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_e9a8e.dir/src.c.o  -o cmTC_e9a8e 
+/usr/bin/ld: CMakeFiles/cmTC_e9a8e.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_e9a8e.dir/build.make:87：cmTC_e9a8e] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_e9a8e/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c80d4/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_c80d4.dir/build.make CMakeFiles/cmTC_c80d4.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c80d4.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c80d4.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c80d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c80d4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_c80d4.dir/src.c.o  -o cmTC_c80d4 
+/usr/bin/ld: CMakeFiles/cmTC_c80d4.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_c80d4.dir/build.make:87：cmTC_c80d4] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_c80d4/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9905/fast && make[1]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_b9905.dir/build.make CMakeFiles/cmTC_b9905.dir/build
+make[2]: 进入目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b9905.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b9905.dir/src.c.o   -c /home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b9905
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9905.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_b9905.dir/src.c.o  -o cmTC_b9905 
+/usr/bin/ld: CMakeFiles/cmTC_b9905.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_b9905.dir/build.make:87：cmTC_b9905] 错误 1
+make[2]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+make[1]: *** [Makefile:121：cmTC_b9905/fast] 错误 2
+make[1]: 离开目录“/home/hs/recommender/matrix/example/build/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
