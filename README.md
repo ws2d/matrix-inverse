@@ -46,7 +46,7 @@ Once the file is executed, it will output the following information:
 
 6. dia:block inversion(512,512)
 
-   7-10. test
+7-10. test
 
 0. Exit
 
